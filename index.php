@@ -19,5 +19,11 @@ echo $sheep->cold_blooded;
 ?>
 
 
+<h1 class="animalis">
+  membuat frog.php ape.php dan index.php
+</h1>
+
+
+
 </body>
 </html>
