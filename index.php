@@ -19,23 +19,35 @@ echo $sheep->cold_blooded;
 ?>
 
 
-<h1 class="animalis">
-  membuat frog.php ape.php dan index.php
-</h1>
-<?php
-  require_once 'Frog.php';
+  <h1 class="animalis">
+    membuat frog.php ape.php dan index.php
+  </h1>
+    <?php
+  require_once 'animal.php';
   require_once 'Ape.php';
-    $sungokong = new Ape("kera sakti");
-    echo $sungokong->name . "\n";
-    echo $sungokong->legs . "\n";
-    echo $sungokong->cold_blooded . "\n"; 
-    $sungokong->yell();
-    $kodok = new Frog("buduk");
-    echo $kodok->name . "\n";
-    echo $kodok->legs . "\n";
-    echo $kodok->cold_blooded . "\n";
-    $kodok->jump();
-?>
+  require_once 'Frog.php';
+
+  $sheep = new Animal("shaun: \n");
+  echo $sheep->name . "\n";
+  echo $sheep->legs . "\n";
+  echo $sheep->cold_blooded;
+  echo "\n\n";
+
+  $sungokong = new Ape("kera sakti: \n");
+  echo "name: " . $sungokong->name . "\n";
+  echo "legs: " . $sungokong->legs . "\n";
+  echo "cold_blooded: " . $sungokong->cold_blooded . "\n";
+  $sungokong->yell();
+  echo "\n\n";
+
+  $kodok = new Frog("buduk: \n");
+  echo "name: " . $kodok->name . "\n";
+  echo "legs: " . $kodok->legs . "\n";
+  echo "cold_blooded: " . $kodok->cold_blooded . "\n";
+  $kodok->jump();
+  echo "\n\n";
+  ?>
+
 
 
 
