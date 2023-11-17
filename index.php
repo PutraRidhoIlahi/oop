@@ -9,5 +9,15 @@
   <div class="animal">
     membuat class
   </div>
+
+  <?php
+require_once 'animal.php';
+$sheep = new Animal("shaun");
+echo $sheep->name;
+echo $sheep->legs;
+echo $sheep->cold_blooded;
+?>
+
+
 </body>
 </html>
